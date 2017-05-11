@@ -11,7 +11,7 @@
 #        6	31245736	rs6906846	A	G	100	PASS	
 #        AC=3399;AF=0.678714;AN=5008;NS=2504;DP=18618;EAS_AF=0.7411;AMR_AF=0.6787;
 #        AFR_AF=0.6256;EUR_AF=0.6899;SAS_AF=0.6748;AA=a|||;VT=SNP
-# Output: 10-column files delimted by whitespace as below. 
+# Output: A whitespace-delimited file with ten columns as below.
 #         #chrom position rsid A1 A2 AMR AFR EUR SAS EAS
 #         6 31245736 rs6906846 A G 0.7411 0.6787 0.6256 0.6899 0.6748
 #         American     AMR    
