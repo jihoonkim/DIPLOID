@@ -8,7 +8,9 @@
 # Input: A whitespace-delimited .txt file with ten columns as below.
 #         #chrom position rsid A1 A2 AMR AFR EUR SAS EAS
 #         6 31245736 rs6906846 A G 0.7411 0.6787 0.6256 0.6899 0.6748
-#          (https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=6906846)
+#        http://www.ensembl.org/Homo_sapiens/Variation/Explore?v=rs6906846;vdb=variation
+#	  	 https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=6906846
+#          
 #         American     AMR    
 #         African      AFR
 #         European     EUR

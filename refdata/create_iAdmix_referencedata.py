@@ -11,6 +11,8 @@
 #        6	31245736	rs6906846	A	G	100	PASS	
 #        AC=3399;AF=0.678714;AN=5008;NS=2504;DP=18618;EAS_AF=0.7411;AMR_AF=0.6787;
 #        AFR_AF=0.6256;EUR_AF=0.6899;SAS_AF=0.6748;AA=a|||;VT=SNP
+#        http://www.ensembl.org/Homo_sapiens/Variation/Explore?v=rs6906846;vdb=variation
+#	  	 https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=6906846
 # Output: A whitespace-delimited .txt file with ten columns in a sorted order of
 #         African      AFR
 #         American     AMR    
