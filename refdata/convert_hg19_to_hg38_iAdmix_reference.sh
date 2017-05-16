@@ -10,13 +10,13 @@
 #         6 31245736 rs6906846 A G 0.7411 0.6787 0.6256 0.6899 0.6748
 #        http://www.ensembl.org/Homo_sapiens/Variation/Population?db=core;v=rs6906846;vdb=variation
 #          
-#         American     AMR    
 #         African      AFR
+#         American     AMR    
+#         East Asian   EAS
 #         European     EUR
 #         South Asian  SAS
-#         East Asian   EAS
 # Output: A whitespace-delimited .txt file with ten columns as below.
-#         #chrom position rsid A1 A2 AMR AFR EUR SAS EAS
+#         #chrom position rsid A1 A2 AFR AMR EAS EUR SAS
 #-----------------------------------------------------------------------------------
 export IN_FILE=iAdmix.reference.1000Gphase3snp.hg19.txt
 export OUT_FILE=iAdmix.reference.1000Gphase3snp.hg38.txt
@@ -37,7 +37,7 @@ awk '{  OFS="\t"; if(NR > 1) print "chr"$1,$2-1,$2,$3";"$4";"$5";"$6";"$7";"$8";
 liftOver $IN_FILE.bed $REF_CHAIN $OUT_FILE.bed $OUT_FILE.unmapped 
 
 # Convert .bed output file (generaed by liftOver) to iAdmix reference .txt format
-echo -e "#chrom position rsid A1 A2 AMR AFR EUR SAS EAS" > $OUT_FILE
+echo -e "#chrom position rsid A1 A2 AFR AMR EAS EUR SAS" > $OUT_FILE
 awk '{ split($4, a, ";"); print $1,$3,a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8] }' \
 	$OUT_FILE.bed | \
 	sed 's/^chr//g' >>  $OUT_FILE
