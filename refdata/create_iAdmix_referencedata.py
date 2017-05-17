@@ -26,6 +26,9 @@ import getopt, re, sys
 
 def get_superpopulation_allele_frequency( inputfile ):
 	with open(inputfile) as fh:
+		# print header
+		print "#chrom position rsid A1 A2 AFR AMR EAS EUR SAS"
+
 		for line in fh:
 			# Skip the comments in the header
 			if ( line.startswith("#") ):

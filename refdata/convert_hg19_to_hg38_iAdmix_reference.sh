@@ -20,7 +20,7 @@
 #-----------------------------------------------------------------------------------
 export IN_FILE=iAdmix.reference.1000Gphase3snp.hg19.txt
 export OUT_FILE=iAdmix.reference.1000Gphase3snp.hg38.txt
-export REF_CHAIN=/mnt/data/UCSC/overchain/hg19ToHg38.over.chain
+export REF_CHAIN=hg19ToHg38.over.chain
 
 # Convert iAdmix reference .txt format file (produced by running 
 #         create_iAdmix_referencedata_hg19.sh) to .bed format
