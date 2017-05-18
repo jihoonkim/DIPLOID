@@ -18,8 +18,8 @@
 # Output: A whitespace-delimited .txt file with ten columns as below.
 #         #chrom position rsid A1 A2 AFR AMR EAS EUR SAS
 #-----------------------------------------------------------------------------------
-export IN_FILE=iAdmix.reference.1000Gphase3snp.hg19.txt
-export OUT_FILE=iAdmix.reference.1000Gphase3snp.hg38.txt
+export IN_FILE=1000Gphase3.5superpopulations.hg19.txt
+export OUT_FILE=1000Gphase3.5superpopulations.hg38.txt
 export REF_CHAIN=hg19ToHg38.over.chain
 
 # Convert iAdmix reference .txt format file (produced by running 

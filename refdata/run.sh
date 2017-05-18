@@ -41,7 +41,7 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.wgs.phase3_sh
 gunzip ALL.wgs*.vcf.gz
 
 # create an iAdmix reference data (hg19) from 1000 genomes vcf file
-python create_iAdmix_referencedata.py -i  ALL.wgs.phase3_shapeit2_mvncall_integrated_v5b.20130502.sites.vcf > iAdmix.reference.1000Gphase3snp.hg19.txt
+python create_iAdmix_referencedata.py -i  ALL.wgs.phase3_shapeit2_mvncall_integrated_v5b.20130502.sites.vcf > 1000Gphase3.5superpopulations.hg19.txt
 
 # convert iAdmix reference data hg19 to hg18
 bash convert_hg19_to_hg18_iAdmix_reference.sh
