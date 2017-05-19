@@ -49,3 +49,8 @@ bash convert_hg19_to_hg18_iAdmix_reference.sh
 # convert iAdmix reference data hg19 to hg38
 bash convert_hg19_to_hg38_iAdmix_reference.sh
 
+# create a subset of above reference (due to memory size limitation)
+python create_subset_refdata.py -s rsid.hapmap3.8populations.hg19.txt \
+    -i 1000Gphase3.5superpopulations.hg19.txt > 1000Gphase3Subset250K.5superpopulations.hg19.txt
+
+
