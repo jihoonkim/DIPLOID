@@ -6,5 +6,7 @@
 !*.py
 !*.R
 !*.sh
+!*.sql
+!database/
 !refdata/
 !TCGA/
