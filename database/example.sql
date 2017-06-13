@@ -19,3 +19,11 @@ SELECT M.rsid, D.*, P.alleleA, P.alleleB,
      INNER JOIN affyprobeset        AS P ON D.probesetID = P.probesetID
      INNER JOIN hg19snp147          AS H ON H.name = M.rsid
   WHERE  M.rsid='rs12984174'
+
+
+
+
+  rs549010975
+
+
+  rs202107783
