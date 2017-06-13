@@ -4,15 +4,15 @@
 DROP TABLE IF EXISTS affyprobeset;
 
 CREATE TABLE affyprobeset (
- 	probsetID   VARCHAR(20) NOT NULL PRIMARY KEY ,
+ 	probesetID   VARCHAR(20) NOT NULL PRIMARY KEY ,
 	alleleA     CHAR(1),
 	alleleB     CHAR(1)
 );
 
-DROP TABLE IF EXISTS map_probsetID_rsid;
+DROP TABLE IF EXISTS map_probesetID_rsid;
 
-CREATE TABLE map_probsetID_rsid  (
-	probsetID   VARCHAR(20) NOT NULL PRIMARY KEY,
+CREATE TABLE map_probesetID_rsid  (
+	probesetID   VARCHAR(20) NOT NULL PRIMARY KEY,
  	rsid        VARCHAR(20) NOT NULL 
 );
 
@@ -63,15 +63,13 @@ CREATE TABLE `hg19snp147` (
 
 
 
-DROP TABLE IF EXISTS decodedcall;
+DROP TABLE IF EXISTS decodeintegercall;
 
-CREATE TABLE decodedcall (
-  caseID          CHAR(36) NOT NULL,
+CREATE TABLE decodeintegercall (
   probesetID      VARCHAR(20) NOT NULL,
   intCall         TINYINT,
-  confidencescore FLOAT(5,4),
   acgtCall        CHAR(2),
-  PRIMARY KEY (caseid, probesetID)
+  PRIMARY KEY (probesetID, intCall)
 );
 
 
