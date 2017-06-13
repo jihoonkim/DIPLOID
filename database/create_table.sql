@@ -1,4 +1,4 @@
-mysql -D diploid -u mgr -p 
+--mysql -D diploid -u mgr -p 
 
 
 DROP TABLE IF EXISTS affyprobeset;
@@ -28,9 +28,9 @@ CREATE TABLE birdseedcall (
 );
 
 
-DROP TABLE IF EXISTS snp147;
+DROP TABLE IF EXISTS hg19snp147;
 
-CREATE TABLE `snp147` (
+CREATE TABLE `hg19snp147` (
   `bin` smallint(5) unsigned NOT NULL,
   `chrom` varchar(31) NOT NULL,
   `chromStart` int(10) unsigned NOT NULL,
@@ -65,11 +65,15 @@ CREATE TABLE `snp147` (
 
 DROP TABLE IF EXISTS decodedcall;
 
-
 CREATE TABLE decodedcall (
   caseID          CHAR(36) NOT NULL,
   probesetID      VARCHAR(20) NOT NULL,
-  acgtCall        CHAR(2),
+  intCall         TINYINT,
   confidencescore FLOAT(5,4),
+  acgtCall        CHAR(2),
   PRIMARY KEY (caseid, probesetID)
 );
+
+
+
+
