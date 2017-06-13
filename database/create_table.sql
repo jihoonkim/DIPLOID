@@ -73,5 +73,37 @@ CREATE TABLE decodeintegercall (
 );
 
 
+DROP TABLE IF EXISTS hg19IGSR;
+
+CREATE TABLE hg19IGSR (
+  chrom    VARCHAR(2) NOT NULL,
+  position int(10) unsigned NOT NULL,
+  rsid     VARCHAR(20) NOT NULL, 
+  A1       VARCHAR(20) NOT NULL,
+  A2       VARCHAR(20) NOT NULL,
+  AFR      FLOAT(5,4),
+  AMR      FLOAT(5,4),
+  EAS      FLOAT(5,4),
+  EUR      FLOAT(5,4),
+  SAS      FLOAT(5,4),
+  PRIMARY KEY (rsid, A1, A2)
+);
+
+
+CREATE TABLE test (
+  chrom    VARCHAR(2) NOT NULL,
+  position int(10) unsigned NOT NULL,
+  rsid     VARCHAR(20) NOT NULL PRIMARY KEY,
+  A1       VARCHAR(20),
+  A2       VARCHAR(20),
+  AFR      FLOAT(5,4),
+  AMR      FLOAT(5,4),
+  EAS      FLOAT(5,4),
+  EUR      FLOAT(5,4),
+  SAS      FLOAT(5,4)
+);
+
+
+
 
 

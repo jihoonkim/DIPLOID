@@ -18,3 +18,6 @@ mysqlimport diploid -u mgr -pmgrpasswd /scratch/DATABASE/hg19snp147.txt \
 mysqlimport diploid -u mgr -pmgrpasswd /scratch/DATABASE/decodeintegercall.txt \
   --ignore-lines=1  --lines-terminated-by='\n' 
 
+
+mysqlimport diploid -u mgr -pmgrpasswd /scratch/DATABASE/hg19IGSR.txt \
+  --ignore-lines=1  --lines-terminated-by='\n' 
