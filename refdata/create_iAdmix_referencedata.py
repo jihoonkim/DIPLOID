@@ -39,8 +39,10 @@ def get_superpopulation_allele_frequency( inputfile ):
 				continue
 
 			# Collect the first 5 columns for output (chrom position rsid A1 A2)
+			# The allele frequency in the reference file is that of A1, usually this is alternative allele.
 			line = line.rstrip().split("\t")
-			record = line[0] + ' ' + line[1] + ' ' + line[2] + ' ' + line[3] + ' ' + line[4]
+			#record = line[0] + ' ' + line[1] + ' ' + line[2] + ' ' + line[3] + ' ' + line[4]
+			record = line[0] + ' ' + line[1] + ' ' + line[2] + ' ' + line[4] + ' ' + line[3]
 
 			# Create a dictionary with super-population as a key and freq as a value
 			# This is because input vcf files has randomly ordered allele frequencies
