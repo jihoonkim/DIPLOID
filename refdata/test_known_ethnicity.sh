@@ -12,7 +12,7 @@
 python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/hapmap3.8populations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=146c5332-1af5-4c49-b740-9a9edc795f24  --out=test_hapmap3 
 
-python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/swap.txt  --cores=4 \
+python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/1000Gphase3Subset250K.5superpopulations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=146c5332-1af5-4c49-b740-9a9edc795f24  --out=test_1000G
 
 
@@ -29,7 +29,7 @@ python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/swap.txt  --cores=4 
 python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/hapmap3.8populations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=1d25c24e-bd3c-4023-85c1-b158f76324f1 --out=test_hapmap3 
 
-python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/swap.txt  --cores=4 \
+python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/1000Gphase3Subset250K.5superpopulations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=1d25c24e-bd3c-4023-85c1-b158f76324f1  --out=test_1000G
 
 
@@ -45,8 +45,10 @@ python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/swap.txt  --cores=4 
 python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/hapmap3.8populations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=16ac4341-cf8f-45e2-b90b-2d12d5f74a59 --out=test_hapmap3 
 
-python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/swap.txt  --cores=4 \
+python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/1000Gphase3Subset250K.5superpopulations.hg18.txt  --cores=4 \
   --path=/opt/ancestry --plink=16ac4341-cf8f-45e2-b90b-2d12d5f74a59  --out=test_1000G
 
 
+python   /opt/ancestry/runancestry.py  --freq=/opt/ancestry/1000Gphase3.5superpopulations.hg18.txt  --cores=4 \
+  --path=/opt/ancestry --plink=16ac4341-cf8f-45e2-b90b-2d12d5f74a59  --out=test_1000G
 
