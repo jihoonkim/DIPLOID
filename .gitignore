@@ -8,5 +8,6 @@
 !*.sh
 !*.sql
 !database/
+!provision/
 !refdata/
 !TCGA/
