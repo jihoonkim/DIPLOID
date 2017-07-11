@@ -10,7 +10,7 @@ do
   PREFIX=`basename $i .ped`
   # compute population allele frequencies 
   python    ${iADMIX_DIR}/runancestry.py  --freq=${RESOURCE_DATA} --cores=4 \
-    --path=${iADMIX_DIR} --plink=${i} --out=${OUTPUT_DIR}/${i} 
+    --path=${iADMIX_DIR} --plink=${PREFIX} --out=${OUTPUT_DIR}/${PREFIX} 
 done
 
 # echo -e "reference sample YRI CHB CHD TSI MKK LWK CEU JPT" > af.hapmap3_8populations_hg18.txt 
