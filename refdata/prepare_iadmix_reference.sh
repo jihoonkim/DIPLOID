@@ -4,10 +4,16 @@ tail -n  +2 backup_1000Gphase3_5superpopulations_hg38.txt > body.txt
 
 sort -k1,1 -k2,2n body.txt > sortedbody.txt
 
-grep -v 'alt\|random\|Un' sortedbody.txt  > removeNoncanonicalChrom.txt 
-
-awk '{ print $1,$2,$3,$5,$4,$6,$7,$8,$9,$10 } ' removeNoncanonicalChrom.txt  > swapA1A2.txt 
+grep -v 'alt\|random\|Un\|,' sortedbody.txt  > removeNoncanonicalChrom.txt 
 
 
-echo -e "" > 1000Gphase3_5superpopulations_hg38.txt
-cat swapA1A2.txt >> 1000Gphase3_5superpopulations_hg38.txt
+
+echo -e "#chrom position rsid A1 A2 AFR AMR EAS EUR SAS" > 1000Gphase3_5superpopulations_hg38.txt
+
+cat removeNoncanonicalChrom.txt >> 1000Gphase3_5superpopulations_hg38.txt
+
+
+grep -w "rs2185539\|rs3131972\|rs6906846"  1000Gphase3.5superpopulations.hg38.txt
+
+
+#grep -w "rs2185539\|rs3131972\|rs6906846"  ALL.wgs.phase3_shapeit2_mvncall_integrated_v5b.20130502.sites.vcf
